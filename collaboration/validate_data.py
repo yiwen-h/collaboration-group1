@@ -17,6 +17,15 @@ def validate_message(message_string: str) -> bool:
 
 
 def validate_files(file_contents_dict: dict) -> dict:
+    """Loops through all the files in the dict and checks if they have a valid name and message.
+    Returns a new dict containing only valid files.
+
+    Args:
+        file_contents_dict (dict): Dict with all files
+
+    Returns:
+        dict: Dict with only valid files, with the name and message parsed
+    """
     valid_file_contents = {}
     for filename, file_contents in file_contents_dict.items():
         valid = validate_name(file_contents[0]) and validate_message(file_contents[1])
