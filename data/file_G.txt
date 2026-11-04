@@ -1,2 +1,2 @@
-Name: 
-Message: 
+Name: Ben Hemmings
+Message: Hello, World!
